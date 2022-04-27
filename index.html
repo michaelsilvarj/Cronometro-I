@@ -1,3 +1,4 @@
+<!---->
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
@@ -10,6 +11,14 @@
 <body>
     
     <div class="aplicativo">
+
+        <div class="vid-container">
+            <video loop >
+                <source src="./video/rain.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!--  Seleciona o tempo  -->
         <div class="time-select">
             <button data-time="30">30 segundos</button><br>
             <button data-time="60">1 minuto</button> <br>
@@ -18,12 +27,36 @@
             <button data-time="1800">30 minutos</button><br>
             <button data-time="3600">1 hora</button>
         </div>
+
+        <!-- Container do player   -->
         <div class="player-container">
-            <audio src="">
-                
+            <audio class="sound">
+                <source src="./sound/Chuva.mp3">
             </audio>
+            <!-- Desenho do player tocador       -->
+            <img src="./svg/play.svg" alt="play" class="play">
+            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" 
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+            </svg>                
+            <svg class="move-outline" width="453" height="453" viewBox="0 0 453 453" 
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+            </svg>
+            <h3 class="time-display">00:00:00</h3>
         </div>
-        <div class="sound-picker"></div>
+        <!--  Escolhe o som e plano de fundo  -->
+        <div class="sound-picker">
+            <button date-sound="./sound/Chuva.mp3" date-video="./video/rain.mp4" >
+                <img src="./svg/rain.svg" alt="chuva">
+            </button>
+            <button date-sound="./sound/chuvaFloresta.mp3" date-video="./video/chuva_floresta.mp4" >
+                <img src="./svg/rain.svg" alt="chuvaFloresta">
+            </button>
+            <button date-sound="./sound/praia.mp3" date-video="./video/beach.mp4" >
+                <img src="./svg/beach.svg" alt="praia">
+            </button>
+        </div>
 
             
         
