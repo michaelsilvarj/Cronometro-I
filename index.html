@@ -21,16 +21,15 @@
         <!--  Seleciona o tempo  -->
         <div class="time-select">
             <button data-time="30">30 segundos</button><br>
-            <button data-time="60">1 minuto</button> <br>
             <button data-time="300">5 minutos</button><br>
             <button data-time="600">10 minutos</button><br>
             <button data-time="1800">30 minutos</button><br>
-            <button data-time="3600">1 hora</button>
+            <button data-time="3600">1 hora</button><br>            
         </div>
 
         <!-- Container do player   -->
         <div class="player-container">
-            <audio class="sound">
+            <audio class="song">
                 <source src="./sound/Chuva.mp3">
             </audio>
             <!-- Desenho do player tocador       -->
@@ -47,15 +46,17 @@
         </div>
         <!--  Escolhe o som e plano de fundo  -->
         <div class="sound-picker">
-            <button date-sound="./sound/Chuva.mp3" date-video="./video/rain.mp4" >
-                <img src="./svg/rain.svg" alt="chuva">
+            <button data-sound="./sound/Chuva.mp3" data-video="./video/rain.mp4" >
+                <img src="./svg/rain.svg" alt="">
             </button>
-            <button date-sound="./sound/chuvaFloresta.mp3" date-video="./video/chuva_floresta.mp4" >
-                <img src="./svg/rain.svg" alt="chuvaFloresta">
+            <button data-sound="./sound/floresta.mp3" data-video="./video/florestaII.mp4" >
+                <img src="./svg/florestaII.svg" alt="">
             </button>
-            <button date-sound="./sound/praia.mp3" date-video="./video/beach.mp4" >
-                <img src="./svg/beach.svg" alt="praia">
+            <button data-sound="./sound/beach.mp3" data-video="./video/beach.mp4" >
+                <img src="./svg/beach.svg" alt="">
             </button>
+            
+            
         </div>
 
             
